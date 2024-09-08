@@ -307,7 +307,7 @@ if ($true) {
 		#
 		$local:srd.ReadLine() | ConvertFrom-Csv -Delimiter ';' -Header 'Machine Type','Serial No.','Software Version','Unknown' | Format-Table
 		#
-		$local:srd.ReadToEnd() | ConvertFrom-Csv -Delimiter ';' -Header ('Tag','Number','Date','Time','Welder','Construction Site','Temperature','D5','Fitting','D7','Voltage Max','Vmin','Energy','D11','D12','Next Maintenance','Software Version','D15','D16','D17') | Out-GridView -Title "RODATA"
+		$local:srd.ReadToEnd() | ConvertFrom-Csv -Delimiter ';' -Header ('Tag','Number','Date','Time','Welder','Construction Site','Temperature','D5','Fitting','D7','Voltage Max','Vmin','Energy','D11','D12','Next Maintenance','Software Version','D15','D16','D17') | Out-GridView -Title "RODATA" -Wait
 		#
 	}
 	#
